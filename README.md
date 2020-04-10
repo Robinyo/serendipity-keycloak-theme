@@ -11,6 +11,14 @@
 
 ![divider](./divider.png)
 
+## ❯ Quick Links
+
+* Administrator Documentation
+* [Developer Documentation](docs/developer.md)
+* User Documentation
+
+![divider](./divider.png)
+
 ## ❯ Resources
 
 ### Themes
