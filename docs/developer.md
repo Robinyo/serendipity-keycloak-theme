@@ -41,8 +41,9 @@ docker container run -d --name keycloak \
   -e KEYCLOAK_USER=admin \
   -e KEYCLOAK_PASSWORD=secret \
   robinyo/keycloak
-
 ```
+
+Navigate to the Welcome page: http://localhost:10001 and then login to the Administration Console using the KEYCLOAK_USER (admin) and KEYCLOAK_PASSWORD (secret) credentials.
 
 ## ❯ Docker Commands
 
