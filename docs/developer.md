@@ -1,4 +1,8 @@
-# Serendipity Keycloak Theme
+<h1 align="center">Developer Documentation</h1>
+
+<p align="center">
+  <b>The goal of this guide is to help you build the theme related assets used by Serendipity's Identity Service</b></br>
+</p>
 
 ## Docker
 
