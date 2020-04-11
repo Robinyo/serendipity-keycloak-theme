@@ -28,6 +28,3 @@ Login page:
 <p align="center">
   <img src="https://github.com/Robinyo/serendipity-keycloak-theme/blob/master/screen-shots/login.png">
 </p>
-
-![divider](./divider.png)
-
