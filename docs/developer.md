@@ -69,7 +69,7 @@ To verify that the bind mount was created correctly (look for the **Mounts** sec
         "RW": true,
         "Propagation": "rprivate"
     }
-],
+]
 ```
 
 Navigate to the Welcome page: http://localhost:10001 and then login to the Administration Console using the KEYCLOAK_USER (admin) and KEYCLOAK_PASSWORD (secret) credentials.
@@ -170,5 +170,17 @@ Where is your image? It’s in your machine’s local Docker image registry:
 ```
 docker image ls
 ```
+
+![divider](../divider.png)
+
+## ❯ Resources
+
+### Docker Resources
+
+* Docker docs: [Use bind mounts](https://docs.docker.com/storage/bind-mounts/)
+
+### Keycloak Theme Resources
+
+* Keycloak docs: [Server Developer Guide - Themes](https://www.keycloak.org/docs/latest/server_development/#_themes)
 
 ![divider](../divider.png)
