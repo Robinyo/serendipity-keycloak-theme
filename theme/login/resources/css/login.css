@@ -77,6 +77,8 @@ a#kc-current-locale-link::after {
     width: 100%;
 }
 
+/*
+
 #kc-logo-wrapper {
     background-image: url(../img/keycloak-logo-2.png);
     background-repeat: no-repeat;
@@ -84,6 +86,8 @@ a#kc-current-locale-link::after {
     width: 300px;
     margin: 62px auto 0;
 }
+
+*/
 
 div.kc-logo-text {
     visibility: hidden;

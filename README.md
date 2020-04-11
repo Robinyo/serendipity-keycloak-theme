@@ -31,10 +31,3 @@ Login page:
 
 ![divider](./divider.png)
 
-## ❯ Resources
-
-### Themes
-
-* Keycloak docs: [Server Developer Guide - Themes](https://www.keycloak.org/docs/latest/server_development/#_themes)
-
-
