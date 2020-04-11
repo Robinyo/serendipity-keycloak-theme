@@ -21,10 +21,20 @@ However, Serendipity's user experience is quite different from Keycloaks so we n
 
 ![divider](./divider.png)
 
+## ❯ Screen Shots
+
+Login page:
+
+<p align="center">
+  <img src="https://github.com/Robinyo/serendipity-keycloak-theme/blob/master/screen-shots/login.png">
+</p>
+
+![divider](./divider.png)
+
 ## ❯ Resources
 
 ### Themes
 
 * Keycloak docs: [Server Developer Guide - Themes](https://www.keycloak.org/docs/latest/server_development/#_themes)
 
-![divider](./divider.png)
+

@@ -1,7 +1,7 @@
 .login-pf body {
-    background: url("../img/keycloak-bg.png") no-repeat center center fixed;
-    background-size: cover;
-    height: 100%;
+  background: url("../img/earth-and-moon.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
 }
 
 .alert-error {
@@ -86,6 +86,7 @@ a#kc-current-locale-link::after {
 }
 
 div.kc-logo-text {
+    visibility: hidden;
     background-image: url(../img/keycloak-logo-text.png);
     background-repeat: no-repeat;
     height: 63px;
