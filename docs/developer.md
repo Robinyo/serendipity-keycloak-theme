@@ -183,4 +183,9 @@ docker image ls
 
 * Keycloak docs: [Server Developer Guide - Themes](https://www.keycloak.org/docs/latest/server_development/#_themes)
 
+### Example Keycloak Themes
+
+* GitHub: [Material Design Theme for Keycloak](https://github.com/MAXIMUS-DeltaWare/material-keycloak-theme)
+* GitHub: [Alfresco Keycloak Theme](https://github.com/Alfresco/alfresco-keycloak-theme)
+
 ![divider](../divider.png)
