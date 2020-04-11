@@ -8,7 +8,7 @@
 
 ### Build an Image
 
-You can use the sample Dockerfile to build a Keycloak image:
+You can use the sample [Dockerfile](https://github.com/Robinyo/serendipity-keycloak-theme/blob/master/Dockerfile) to build a Keycloak image:
 
 ```
 docker build -t robinyo/keycloak .
@@ -41,6 +41,35 @@ docker container run -d --name keycloak \
   -e KEYCLOAK_USER=admin \
   -e KEYCLOAK_PASSWORD=secret \
   robinyo/keycloak
+```
+
+You can use:
+
+```
+docker inspect keycloak
+``` 
+
+To verify that the bind mount was created correctly (look for the **Mounts** section):
+
+```
+"Mounts": [
+    {
+        "Type": "bind",
+        "Source": "/Users/robferguson/workspace/Robinyo/serendipity",
+        "Destination": "/serendipity",
+        "Mode": "",
+        "RW": true,
+        "Propagation": "rprivate"
+    },
+    {
+        "Type": "bind",
+        "Source": "/Users/robferguson/workspace/Robinyo/serendipity-keycloak-theme/theme",
+        "Destination": "/opt/jboss/keycloak/themes/serendipity",
+        "Mode": "",
+        "RW": true,
+        "Propagation": "rprivate"
+    }
+],
 ```
 
 Navigate to the Welcome page: http://localhost:10001 and then login to the Administration Console using the KEYCLOAK_USER (admin) and KEYCLOAK_PASSWORD (secret) credentials.
