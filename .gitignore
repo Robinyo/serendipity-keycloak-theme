@@ -33,5 +33,6 @@ Thumbs.db
 /secrets
 /tmp
 /temp
+/keycloak
 
 TODO.txt

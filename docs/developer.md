@@ -177,7 +177,7 @@ docker image ls
 
 ### Docker Resources
 
-* Docker docs: [Use bind mounts](https://docs.docker.com/storage/bind-mounts/)
+* Docker docs: [Bind mounts](https://docs.docker.com/storage/bind-mounts/)
 
 ### Keycloak Theme Resources
 
