@@ -4,9 +4,40 @@
   <b>The goal of this guide is to help you build the theme related assets used by Serendipity's Identity Service.</b></br>
 </p>
 
-## Docker
+## ❯ Quick Start
 
-### Build an Image
+Good tools make application development better and easier.
+
+### Step 1. Set up the Development Environment 
+
+You need to set up your development environment before you can do anything.
+
+Open a terminal window and install [Node.js (and npm)](https://nodejs.org/en/download/) and [git](https://git-scm.com/) if they are not already on your machine.
+
+> Verify that you are running at least Node.js version 8.x or greater and npm version 5.x or greater by running node -v and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine.
+
+Then install [Sass](https://sass-lang.com) globally:
+
+```
+npm install -g sass
+```
+
+### Step 2. Clone the project 
+
+Change the current working directory to the location where you want the cloned directory to be:
+
+```
+cd ~/workspace
+```
+
+Clone the project by running the following command:
+
+```
+git clone https://github.com/Robinyo/serendipity-keycloak-theme
+cd serendipity
+```
+
+### Step 3: Build a Keycloak Image
 
 You can use the sample [Dockerfile](https://github.com/Robinyo/serendipity-keycloak-theme/blob/master/Dockerfile) to build a Keycloak image:
 
@@ -29,9 +60,9 @@ REPOSITORY         TAG                 IMAGE ID            CREATED             S
 robinyo/keycloak   latest              b937f8b599f0        21 minutes ago      643MB
 ```
 
-### Run the Image
+### Step 4: Launch Keycloak
 
-For example:
+To launch Keycloak:
 
 ```
 docker container run -d --name keycloak \
@@ -42,6 +73,10 @@ docker container run -d --name keycloak \
   -e KEYCLOAK_PASSWORD=secret \
   robinyo/keycloak
 ```
+
+Because we want to preview our changes as we make them we'll use a [bind mount](https://docs.docker.com/storage/bind-mounts/) to mount our theme directory into the container.
+
+Note: The name of the target directory (serendipity) becomes the name of the theme.
 
 You can use:
 
@@ -72,7 +107,9 @@ To verify that the bind mount was created correctly (look for the **Mounts** sec
 ]
 ```
 
-Navigate to the Welcome page: http://localhost:10001 and then login to the Administration Console using the KEYCLOAK_USER (admin) and KEYCLOAK_PASSWORD (secret) credentials.
+Navigate to the Welcome page: http://localhost:10001
+ 
+Then login to the Administration Console using the KEYCLOAK_USER (admin) and KEYCLOAK_PASSWORD (secret) credentials.
 
 ## ❯ Docker Commands
 
