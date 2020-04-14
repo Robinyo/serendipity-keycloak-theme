@@ -22,6 +22,18 @@ Then install [Sass](https://sass-lang.com) globally:
 npm install -g sass
 ```
 
+When you install Sass globally, you'll be able to run the `sass` executable to compile .sass and .scss files to .css files. For example:
+
+```
+sass --load-path=/Users/robferguson/workspace/Robinyo/serendipity-keycloak-theme/node_modules login.scss:login.css
+```
+
+You can also setup a File Watcher in your IDE, for example:
+
+<p align="center">
+  <img src="https://github.com/Robinyo/serendipity-keycloak-theme/blob/master/screen-shots/intellij-idea-file-watcher.png">
+</p>
+
 ### Step 2. Clone the project 
 
 Change the current working directory to the location where you want the cloned directory to be:
