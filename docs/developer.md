@@ -46,7 +46,7 @@ Clone the project by running the following command:
 
 ```
 git clone https://github.com/Robinyo/serendipity-keycloak-theme
-cd serendipity
+cd serendipity-keycloak-theme
 ```
 
 ### Step 3: Build a Keycloak Image
