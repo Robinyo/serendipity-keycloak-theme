@@ -76,7 +76,7 @@ docker container run -d --name keycloak \
 
 Because we want to preview our changes as we make them we'll use a [bind mount](https://docs.docker.com/storage/bind-mounts/) to mount our theme directory into the container.
 
-Note: The name of the target directory (serendipity) becomes the name of the theme.
+**Note:** The name of the target directory (serendipity) becomes the name of the theme.
 
 You can use:
 
