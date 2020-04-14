@@ -1,6 +1,10 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
 
 # dependencies
 /node_modules
