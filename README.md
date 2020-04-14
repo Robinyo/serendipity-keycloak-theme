@@ -8,7 +8,7 @@
 
 ## ❯ Introduction
 
-The Serendipity Identity Service uses Keycloak. Keycloak provides support for OpenID Connect, SAML 2.0 and OAuth 2.0.
+The Serendipity Identity Service uses Keycloak. Keycloak provides support for OpenID Connect, OAuth 2.0 and SAML 2.0.
 However, Serendipity's user experience is quite different from Keycloaks so we need to provide a custom Keycloak theme.
 
 ![divider](./divider.png)

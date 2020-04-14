@@ -22,7 +22,7 @@ Then install [Sass](https://sass-lang.com) globally:
 npm install -g sass
 ```
 
-When you install Sass globally, you'll be able to run the `sass` executable to compile .sass and .scss files to .css files. For example:
+Now you'll be able to run the `sass` executable (from the command line) to compile .sass and .scss files to .css files. For example:
 
 ```
 sass --load-path=/Users/robferguson/workspace/Robinyo/serendipity-keycloak-theme/node_modules login.scss:login.css
