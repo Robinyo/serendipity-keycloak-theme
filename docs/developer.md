@@ -14,7 +14,7 @@ You need to set up your development environment before you can do anything.
 
 Open a terminal window and install [Node.js (and npm)](https://nodejs.org/en/download/) and [git](https://git-scm.com/) if they are not already on your machine.
 
-> Verify that you are running at least Node.js version 8.x or greater and npm version 5.x or greater by running node -v and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine.
+> Verify that you are running at least Node.js version 10.x or greater and npm version 6.x or greater by running node -v and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine.
 
 Then install [Sass](https://sass-lang.com) globally:
 
