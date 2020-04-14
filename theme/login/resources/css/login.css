@@ -2141,6 +2141,15 @@ svg.mdc-button__icon {
   height: 36px;
 }
 
+.mdc-text-field__icon {
+  padding-left: 16px;
+}
+
+.card-actions {
+  padding-bottom: 16px;
+  text-align: right;
+}
+
 .form-group {
   padding-bottom: 16px;
 }

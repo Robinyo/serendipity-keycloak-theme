@@ -2,6 +2,17 @@
 @import "@material/textfield/mdc-text-field";
 @import "@material/button/mdc-button";
 
+.mdc-text-field__icon {
+  padding-left: 16px;
+}
+
+.card-actions {
+  // align-content: flex-end;
+  // float: right;
+  padding-bottom: 16px;
+  text-align: right;
+}
+
 .form-group {
   // margin-bottom: 16px;
   padding-bottom: 16px;
@@ -16,9 +27,6 @@
 }
 
 .btn-primary {
-  // float: right;
-  // text-align: right;
-  // align-content: flex-end;
 }
 
 // /*
