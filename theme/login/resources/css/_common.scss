@@ -1,0 +1,11 @@
+@import "./variables";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding-top: 0.1px; // Prevent header h1 margin from pushing body down
+}
