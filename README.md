@@ -29,6 +29,10 @@ Login page:
   <img src="https://github.com/Robinyo/serendipity-keycloak-theme/blob/master/screen-shots/login.png">
 </p>
 
+## ❯ Resources
+
 ### Blog Posts
 
 * Rob Ferguson's blog: [Keycloak Themes - Part 1](https://robferguson.org/blog/2020/04/12/keycloak-themes-part-1/)
+
+![divider](./divider.png)
