@@ -13,7 +13,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     -->
 
+    <#--
     <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+    -->
 
     <#if properties.meta?has_content>
         <#list properties.meta?split(' ') as meta>
