@@ -16,14 +16,22 @@ html, body {
 }
 
 .login-mdc, body {
+  background: url("../img/keycloak-bg.png") no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding-top: 0.1px; // Prevent header h1 margin from pushing body down
+}
 
-  background-color: #eceff1;
+.mdc-text-field__icon {
+  padding-left: 16px !important;
 }
 
 // https://sass-lang.com/documentation/at-rules/extend
+
+.login-page-mdc {
+
+}
 
 .card-mdc {
   @extend .mdc-card;
@@ -39,36 +47,22 @@ html, body {
   */
 }
 
+.floating-label-mdc {
+  // @extend .mdc-floating-label;
+  width: 100%;
+}
+
+
+
+
+
 //--
-
-.mdc-text-field__icon {
-  padding-left: 16px;
-}
-
-.card-actions {
-  // align-content: flex-end;
-  // float: right;
-  padding-bottom: 16px;
-  text-align: right;
-}
 
 .form-group {
   // margin-bottom: 16px;
   padding-bottom: 16px;
   // display: flex;
 }
-
-.control-label {
-  width: 100%;
-}
-
-.form-control {
-}
-
-.btn-primary {
-}
-
-
 
 // /*
 

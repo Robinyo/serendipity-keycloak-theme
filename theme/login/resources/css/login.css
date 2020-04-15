@@ -2463,10 +2463,15 @@ html, body {
 }
 
 .login-mdc, body {
+  background: url("../img/keycloak-bg.png") no-repeat center center fixed;
+  background-size: cover;
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding-top: 0.1px;
-  background-color: #eceff1;
+}
+
+.mdc-text-field__icon {
+  padding-left: 16px !important;
 }
 
 .card-mdc {
@@ -2482,21 +2487,12 @@ html, body {
   */
 }
 
-.mdc-text-field__icon {
-  padding-left: 16px;
-}
-
-.card-actions {
-  padding-bottom: 16px;
-  text-align: right;
+.floating-label-mdc {
+  width: 100%;
 }
 
 .form-group {
   padding-bottom: 16px;
-}
-
-.control-label {
-  width: 100%;
 }
 
 .login-pf body {

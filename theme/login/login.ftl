@@ -85,10 +85,12 @@
                         </div>
                         -->
 
-                        <div id="kc-form-buttons" class="card-actions">
-                            <button  name="login" id="kc-login" type="submit" class="mdc-button mdc-button--raised">
-                                ${msg("doLogIn")}
-                            </button>
+                        <div class="mdc-card__action-icons">
+                            <div class="mdc-card__action-buttons">
+                                <button name="login" id="kc-login" type="submit" class="mdc-button mdc-button--raised mdc-card__action mdc-card__action--button">
+                                    ${msg("doLogIn")}
+                                </button>
+                            </div>
                         </div>
 
                     </form>
