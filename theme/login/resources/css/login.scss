@@ -3,15 +3,40 @@
 @import "./icons";
 @import "@material/textfield/mdc-text-field";
 @import "@material/button/mdc-button";
+@import "@material/card/mdc-card";
+
+// top, right, bottom, and left
+// width: 100vw;
+// height: 100vh;
 
 html, body {
-  height: 100%;
+  // height: 100%;
+  height: 100vh;
+  // overflow: hidden;
 }
 
-body {
+.login-mdc, body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding-top: 0.1px; // Prevent header h1 margin from pushing body down
+
+  background-color: #eceff1;
+}
+
+// https://sass-lang.com/documentation/at-rules/extend
+
+.card-mdc {
+  @extend .mdc-card;
+  padding: 10px 20px 20px 20px;
+  max-width: 500px;
+  /*
+  background: #fff;
+  margin: 0 auto;
+  padding: 10px 20px 20px 20px;
+  max-width: 500px;
+  border-top: 0;
+  box-shadow: 0 0 0;
+  */
 }
 
 //--
