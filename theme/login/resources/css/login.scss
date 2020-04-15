@@ -9,10 +9,13 @@
 // width: 100vw;
 // height: 100vh;
 
+.mdc-text-field__icon {
+  padding-left: 16px !important;
+}
+
 html, body {
-  // height: 100%;
+  width: 100vw;
   height: 100vh;
-  // overflow: hidden;
 }
 
 .login-mdc, body {
@@ -21,22 +24,27 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding-top: 0.1px; // Prevent header h1 margin from pushing body down
-}
 
-.mdc-text-field__icon {
-  padding-left: 16px !important;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-// https://sass-lang.com/documentation/at-rules/extend
+  // background-color: #eceff1;
+}
 
 .login-page-mdc {
-
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
 }
 
 .card-mdc {
   @extend .mdc-card;
   padding: 10px 20px 20px 20px;
-  max-width: 500px;
+  // max-width: 500px;
+  min-width: 500px;
   /*
   background: #fff;
   margin: 0 auto;
@@ -52,11 +60,13 @@ html, body {
   width: 100%;
 }
 
+//-- Misc
 
+div.kc-logo-text {
+  visibility: hidden !important;
+}
 
-
-
-//--
+//----------
 
 .form-group {
   // margin-bottom: 16px;
@@ -64,7 +74,7 @@ html, body {
   // display: flex;
 }
 
-// /*
+/*
 
 .login-pf body {
   background: url("../img/keycloak-bg.png") no-repeat center center fixed;
@@ -577,4 +587,4 @@ form#kc-select-back-form div.login-pf-social-section {
   border-left: 0;
 }
 
-// */
+*/

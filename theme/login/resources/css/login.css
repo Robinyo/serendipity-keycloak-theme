@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 
 $mdc-theme-primary: #000000;
@@ -2458,7 +2457,12 @@ svg.mdc-button__icon {
   --mdc-ripple-fg-opacity: 0.12;
 }
 
+.mdc-text-field__icon {
+  padding-left: 16px !important;
+}
+
 html, body {
+  width: 100vw;
   height: 100vh;
 }
 
@@ -2468,15 +2472,15 @@ html, body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding-top: 0.1px;
-}
-
-.mdc-text-field__icon {
-  padding-left: 16px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-mdc {
   padding: 10px 20px 20px 20px;
-  max-width: 500px;
+  min-width: 500px;
   /*
   background: #fff;
   margin: 0 auto;
@@ -2491,9 +2495,15 @@ html, body {
   width: 100%;
 }
 
+div.kc-logo-text {
+  visibility: hidden !important;
+}
+
 .form-group {
   padding-bottom: 16px;
 }
+
+/*
 
 .login-pf body {
   background: url("../img/keycloak-bg.png") no-repeat center center fixed;
@@ -2554,7 +2564,7 @@ a#kc-current-locale-link {
 }
 
 a#kc-current-locale-link::after {
-  content: "˅";
+  content: "\2c5";
   margin-left: 4px;
 }
 
@@ -2602,19 +2612,19 @@ div.kc-logo-text span {
   width: 100%;
 }
 
-#kc-attempted-username {
+#kc-attempted-username{
   font-size: 20px;
-  font-family: inherit;
+  font-family:inherit;
   font-weight: normal;
-  padding-right: 10px;
+  padding-right:10px;
 }
 
-#kc-username {
+#kc-username{
   text-align: center;
 }
 
-#kc-webauthn-settings-form {
-  padding-top: 8px;
+#kc-webauthn-settings-form{
+  padding-top:8px;
 }
 
 #kc-info {
@@ -2663,8 +2673,8 @@ ul#kc-totp-supported-apps {
 }
 
 #kc-totp-secret-qr-code {
-  max-width: 150px;
-  max-height: 150px;
+  max-width:150px;
+  max-height:150px;
 }
 
 #kc-totp-secret-key {
@@ -2716,30 +2726,32 @@ ul#kc-totp-supported-apps {
   margin-top: 0;
 }
 
-.kc-login-tooltip {
-  position: relative;
+.kc-login-tooltip{
+  position:relative;
   display: inline-block;
 }
 
-.kc-login-tooltip .kc-tooltip-text {
-  top: -3px;
-  left: 160%;
+.kc-login-tooltip .kc-tooltip-text{
+  top:-3px;
+  left:160%;
   background-color: black;
   visibility: hidden;
   color: #fff;
-  min-width: 130px;
+
+  min-width:130px;
   text-align: center;
   border-radius: 2px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+  box-shadow:0 1px 8px rgba(0,0,0,0.6);
   padding: 5px;
+
   position: absolute;
-  opacity: 0;
-  transition: opacity 0.5s;
+  opacity:0;
+  transition:opacity 0.5s;
 }
 
 .kc-login-tooltip:hover .kc-tooltip-text {
   visibility: visible;
-  opacity: 0.7;
+  opacity:0.7;
 }
 
 .kc-login-tooltip .kc-tooltip-text::after {
@@ -2754,7 +2766,7 @@ ul#kc-totp-supported-apps {
 }
 
 .zocial,
-a.zocial {
+a.zocial  {
   width: 100%;
   font-weight: normal;
   font-size: 14px;
@@ -2765,17 +2777,14 @@ a.zocial {
   border-radius: 0;
   white-space: normal;
 }
-
 .zocial:before {
   border-right: 0;
   margin-right: 0;
 }
-
 .zocial span:before {
   padding: 7px 10px;
   font-size: 14px;
 }
-
 .zocial:hover {
   background: #ededed !important;
 }
@@ -2789,17 +2798,14 @@ a.zocial {
 .zocial.twitter {
   background-image: none;
   border: 0;
+
   box-shadow: none;
   text-shadow: none;
 }
 
-.zocial.microsoft:before {
-  content: "";
-}
+.zocial.microsoft:before{ content: "\f15d"; }
+.zocial.stackoverflow:before{ color: inherit; }
 
-.zocial.stackoverflow:before {
-  color: inherit;
-}
 
 @media (min-width: 768px) {
   #kc-container-wrapper {
@@ -2817,7 +2823,9 @@ a.zocial {
     z-index: 9999;
   }
 }
+
 @media (max-width: 767px) {
+
   .login-pf body {
     background: white;
   }
@@ -2881,21 +2889,29 @@ a.zocial {
     width: 100px;
     margin: 20px 0 0 20px;
   }
+
 }
+
 @media (min-height: 646px) {
   #kc-container-wrapper {
     bottom: 12%;
   }
 }
+
 @media (max-height: 645px) {
   #kc-container-wrapper {
     padding-top: 50px;
     top: 20%;
   }
 }
+
 .card-pf form.form-actions .btn {
   float: right;
   margin-left: 10px;
+}
+
+#kc-form-buttons {
+  // margin-top: 40px;
 }
 
 .login-pf-page .login-pf-brand {
@@ -2907,6 +2923,7 @@ a.zocial {
 .card-pf {
   background: #fff;
   margin: 0 auto;
+  // padding: 0 20px;
   padding: 10px 20px 20px 20px;
   max-width: 500px;
   border-top: 0;
@@ -2914,7 +2931,7 @@ a.zocial {
 }
 
 @media (max-width: 840px) {
-  .login-pf-page .card-pf {
+  .login-pf-page .card-pf{
     max-width: none;
     margin-left: 20px;
     margin-right: 20px;
@@ -2922,22 +2939,21 @@ a.zocial {
   }
 }
 @media (max-width: 767px) {
-  .login-pf-page .card-pf {
+  .login-pf-page .card-pf{
     max-width: none;
     margin-left: 0;
     margin-right: 0;
     padding-top: 0;
   }
-
-  .card-pf.login-pf-accounts {
+  .card-pf.login-pf-accounts{
     max-width: none;
   }
 }
+
 .login-pf-page .login-pf-signup {
   font-size: 15px;
   color: #72767b;
 }
-
 #kc-content-wrapper .row {
   margin-left: 0;
   margin-right: 0;
@@ -2949,19 +2965,17 @@ a.zocial {
     border-right: 1px solid #d1d1d1;
     margin-right: -1px;
   }
-
   .login-pf-page .login-pf-social-section:last-of-type {
     padding-left: 40px;
   }
-
   .login-pf-page .login-pf-social-section .login-pf-social-link:last-of-type {
     margin-bottom: 0;
   }
 }
+
 .login-pf-page .login-pf-social-link {
   margin-bottom: 25px;
 }
-
 .login-pf-page .login-pf-social-link a {
   padding: 2px 0;
 }
@@ -2971,6 +2985,10 @@ a.zocial {
   margin-right: auto;
 }
 
+// .login-pf-page .btn-primary {
+//   margin-top: 0;
+// }
+
 .login-pf-page .list-view-pf .list-group-item {
   border-bottom: 1px solid #ededed;
 }
@@ -2979,9 +2997,15 @@ a.zocial {
   width: 100%;
 }
 
-.login-pf-page .card-pf {
+.login-pf-page .card-pf{
   margin-bottom: 10px;
 }
+
+// #kc-form-login div.form-group:last-of-type,
+// #kc-register-form div.form-group:last-of-type,
+// #kc-update-profile-form div.form-group:last-of-type {
+//   margin-bottom: 0;
+// }
 
 #kc-back {
   margin-top: 5px;
@@ -2991,5 +3015,7 @@ form#kc-select-back-form div.login-pf-social-section {
   padding-left: 0;
   border-left: 0;
 }
+
+*/
 
 /*# sourceMappingURL=login.css.map */
