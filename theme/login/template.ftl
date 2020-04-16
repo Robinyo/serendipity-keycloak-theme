@@ -73,7 +73,17 @@
                     </div>
                 </div>
             <#else>
-                <h1 id="kc-page-title"><#nested "header"></h1>
+
+                <#-- <h1 id="kc-page-title"><#nested "header"></h1> -->
+
+                <h1 id="kc-page-title" class="mdc-typography mdc-typography--headline4"><#nested "header"></h1>
+
+                <#--
+                <div class="mdc-card__primary-action">
+                    <h1 id="kc-page-title" class="mdc-typography mdc-typography--headline4"><#nested "header"></h1>
+                </div>
+                -->
+
             </#if>
         <#else>
             <#if displayRequiredFields>

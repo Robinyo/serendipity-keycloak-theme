@@ -1,16 +1,18 @@
-@import "./palette";
 @import "./fonts";
 @import "./icons";
-@import "@material/textfield/mdc-text-field";
+@import "./palette";
+@import "./typography";
 @import "@material/button/mdc-button";
 @import "@material/card/mdc-card";
+@import "@material/textfield/mdc-text-field";
+@import "@material/typography/mdc-typography";
 
 // top, right, bottom, and left
 // width: 100vw;
 // height: 100vh;
 
 .mdc-text-field__icon {
-  padding-left: 16px !important;
+  padding-left: 12px !important;
 }
 
 html, body {
@@ -19,7 +21,7 @@ html, body {
 }
 
 .login-mdc, body {
-  background: url("../img/keycloak-bg.png") no-repeat center center fixed;
+  background: url('../img/keycloak-bg.png') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -43,8 +45,10 @@ html, body {
 .card-mdc {
   @extend .mdc-card;
   padding: 10px 20px 20px 20px;
+  // By default, cards expand horizontally to fill all available space, and vertically to fit their contents.
   // max-width: 500px;
-  min-width: 500px;
+  // min-width: 500px;
+  width: 500px;
   /*
   background: #fff;
   margin: 0 auto;

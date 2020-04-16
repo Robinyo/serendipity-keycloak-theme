@@ -87,7 +87,7 @@
 
                         <div class="mdc-card__action-icons">
                             <div class="mdc-card__action-buttons">
-                                <button name="login" id="kc-login" type="submit" class="mdc-button mdc-button--raised mdc-card__action mdc-card__action--button">
+                                <button name="login" id="kc-login" type="submit" class="mdc-button mdc-button--raised mdc-card__action">
                                     ${msg("doLogIn")}
                                 </button>
                             </div>
