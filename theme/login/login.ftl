@@ -23,8 +23,8 @@
                         <div class="${properties.kcFormGroupClass!}">
 
                             <div class="mdc-text-field mdc-text-field--with-leading-icon ${properties.kcLabelClass!} <#if usernameEditDisabled??>mdc-text-field--disabled</#if>">
-                                <i class="material-icons mdc-text-field__icon" tabindex="-1" role="button">person</i>
-                                <input required id="username" class="mdc-text-field__input ${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" autofocus autocomplete="off" <#if usernameEditDisabled??>disabled</#if>>
+                                <i class="material-icons mdc-text-field__icon" role="button">person</i>
+                                <input tabindex="0" required id="username" class="mdc-text-field__input ${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" autofocus autocomplete="off" <#if usernameEditDisabled??>disabled</#if>>
                                 <div class="mdc-line-ripple"></div>
                                 <label for="username" class="mdc-floating-label ${properties.kcLabelClass!}">
                                     <#if !realm.loginWithEmailAllowed>
@@ -49,31 +49,79 @@
                         <div class="${properties.kcFormGroupClass!}">
 
                             <div class="mdc-text-field mdc-text-field--with-leading-icon ${properties.kcLabelClass!}">
-                                <i class="material-icons mdc-text-field__icon" tabindex="-1" role="button">lock</i>
-                                <input required id="password" class="mdc-text-field__input ${properties.kcInputClass!}" name="password" type="password" autocomplete="off">
+                                <i class="material-icons mdc-text-field__icon" role="button">lock</i>
+                                <input tabindex="0" required id="password" class="mdc-text-field__input ${properties.kcInputClass!}" name="password" type="password" autocomplete="off">
                                 <div class="mdc-line-ripple"></div>
                                 <label for="password" class="mdc-floating-label ${properties.kcLabelClass!}">${msg("password")}</label>
                             </div>
 
                         </div>
 
+                        <#--
+                        <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
+                           <div id="kc-form-options">
+                               <#if realm.rememberMe && !usernameEditDisabled??>
+                                   <div class="checkbox">
+                                       <label>
+                                           <#if login.rememberMe??>
+                                               <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox" checked> ${msg("rememberMe")}
+                                           <#else>
+                                               <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox"> ${msg("rememberMe")}
+                                           </#if>
+                                       </label>
+                                   </div>
+                               </#if>
+                           </div>
+                           <div class="${properties.kcFormOptionsWrapperClass!}">
+                               <#if realm.resetPasswordAllowed>
+                                   <span><a tabindex="5" href="${url.loginResetCredentialsUrl}">${msg("doForgotPassword")}</a></span>
+                               </#if>
+                           </div>
+                        </div>
+                        -->
+
                         <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
                             <div id="kc-form-options">
                                 <#if realm.rememberMe && !usernameEditDisabled??>
+
+                                    <div class="mdc-form-field">
+                                        <div class="mdc-checkbox">
+                                            <input type="checkbox"
+                                                   class="mdc-checkbox__native-control"
+                                                   id="rememberMe"
+                                                   <#if login.rememberMe??>checked</#if>
+                                            />
+                                            <div class="mdc-checkbox__background">
+                                                <svg class="mdc-checkbox__checkmark"
+                                                     viewBox="0 0 24 24">
+                                                    <path class="mdc-checkbox__checkmark-path"
+                                                          fill="none"
+                                                          d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                                </svg>
+                                                <div class="mdc-checkbox__mixedmark"></div>
+                                            </div>
+                                            <div class="mdc-checkbox__ripple"></div>
+                                        </div>
+                                        <label for="checkbox-1">Checkbox 1</label>
+                                    </div>
+
                                     <div class="checkbox">
                                         <label>
                                             <#if login.rememberMe??>
-                                                <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox" checked> ${msg("rememberMe")}
+                                                <input tabindex="0" id="rememberMe" name="rememberMe" type="checkbox" checked> ${msg("rememberMe")}
                                             <#else>
-                                                <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox"> ${msg("rememberMe")}
+                                                <input tabindex="0" id="rememberMe" name="rememberMe" type="checkbox"> ${msg("rememberMe")}
                                             </#if>
                                         </label>
                                     </div>
+
+
+
                                 </#if>
                             </div>
                             <div class="${properties.kcFormOptionsWrapperClass!}">
                                 <#if realm.resetPasswordAllowed>
-                                    <span><a tabindex="5" href="${url.loginResetCredentialsUrl}">${msg("doForgotPassword")}</a></span>
+                                    <span><a tabindex="0" href="${url.loginResetCredentialsUrl}">${msg("doForgotPassword")}</a></span>
                                 </#if>
                             </div>
                         </div>
@@ -87,7 +135,7 @@
 
                         <div class="mdc-card__action-icons">
                             <div class="mdc-card__action-buttons">
-                                <button name="login" id="kc-login" type="submit" class="mdc-button mdc-button--raised mdc-card__action">
+                                <button tabindex="0" name="login" id="kc-login" type="submit" class="mdc-button mdc-button--raised mdc-card__action">
                                     ${msg("doLogIn")}
                                 </button>
                             </div>
@@ -109,10 +157,10 @@
     <#elseif section = "info" >
         <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
 
-            <hr class="mdc-list-divider">
+            <hr class="mdc-list-divider divider-mdc">
 
-            <div id="kc-registration">
-                <span>${msg("noAccount")} <a tabindex="6" href="${url.registrationUrl}">${msg("doRegister")}</a></span>
+            <div id="kc-registration" class="registration-label-mdc">
+                <span>${msg("noAccount")} <a tabindex="0" href="${url.registrationUrl}">${msg("doRegister")}</a></span>
             </div>
         </#if>
     </#if>

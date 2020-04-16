@@ -4,6 +4,9 @@
 @import "./typography";
 @import "@material/button/mdc-button";
 @import "@material/card/mdc-card";
+@import "@material/checkbox/mdc-checkbox";
+@import "@material/form-field/mdc-form-field";
+@import "@material/list/mdc-list";
 @import "@material/textfield/mdc-text-field";
 @import "@material/typography/mdc-typography";
 
@@ -24,6 +27,7 @@ html, body {
   background: url('../img/keycloak-bg.png') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
   margin: 0;
   padding-top: 0.1px; // Prevent header h1 margin from pushing body down
 
@@ -40,6 +44,19 @@ html, body {
   // flex-direction: column;
   // align-items: center;
   // justify-content: center;
+}
+
+.divider-mdc {
+  // @extend .mdc-list-divider;
+
+  // padding-top: 16px;
+  // padding-bottom: 16px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.registration-label-mdc {
+  text-align: center;
 }
 
 .card-mdc {
@@ -75,7 +92,6 @@ div.kc-logo-text {
 .form-group {
   // margin-bottom: 16px;
   padding-bottom: 16px;
-  // display: flex;
 }
 
 /*
