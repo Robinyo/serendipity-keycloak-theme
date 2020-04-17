@@ -86,9 +86,11 @@
 
                                     <div class="mdc-form-field">
                                         <div class="mdc-checkbox">
-                                            <input type="checkbox"
-                                                   class="mdc-checkbox__native-control"
+                                            <input tabindex="0"
                                                    id="rememberMe"
+                                                   name="rememberMe"
+                                                   type="checkbox"
+                                                   class="mdc-checkbox__native-control"
                                                    <#if login.rememberMe??>checked</#if>
                                             />
                                             <div class="mdc-checkbox__background">
@@ -102,20 +104,8 @@
                                             </div>
                                             <div class="mdc-checkbox__ripple"></div>
                                         </div>
-                                        <label for="checkbox-1">Checkbox 1</label>
+                                        <label for="rememberMe">${msg("rememberMe")}</label>
                                     </div>
-
-                                    <div class="checkbox">
-                                        <label>
-                                            <#if login.rememberMe??>
-                                                <input tabindex="0" id="rememberMe" name="rememberMe" type="checkbox" checked> ${msg("rememberMe")}
-                                            <#else>
-                                                <input tabindex="0" id="rememberMe" name="rememberMe" type="checkbox"> ${msg("rememberMe")}
-                                            </#if>
-                                        </label>
-                                    </div>
-
-
 
                                 </#if>
                             </div>

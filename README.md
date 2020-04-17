@@ -26,7 +26,7 @@ However, Serendipity's user experience is quite different from Keycloaks so we n
 Login page:
 
 <p align="center">
-  <img src="https://github.com/Robinyo/serendipity-keycloak-theme/blob/master/screen-shots/login.png">
+  <img src="https://github.com/Robinyo/serendipity-keycloak-theme/blob/master/screen-shots/login-register.png">
 </p>
 
 ## ❯ Resources
