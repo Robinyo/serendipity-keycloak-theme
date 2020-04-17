@@ -34,5 +34,6 @@ Login page:
 ### Blog Posts
 
 * Rob Ferguson's blog: [Keycloak Themes - Part 1](https://robferguson.org/blog/2020/04/12/keycloak-themes-part-1/)
+* Rob Ferguson's blog: [Keycloak Themes - Part 2](https://robferguson.org/blog/2020/04/17/keycloak-themes-part-2/)
 
 ![divider](./divider.png)
