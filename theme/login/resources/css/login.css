@@ -3,14 +3,14 @@
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
-  src: local("Open Sans Light"), local("OpenSans-Light"), url("../assets/fonts/open-sans-v17-latin-300.woff2") format("woff2"), url("../assets/fonts/open-sans-v17-latin-300.woff") format("woff");
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/open-sans-v17-latin-300.woff2") format("woff2"), url("../fonts/open-sans-v17-latin-300.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(../assets/fonts/MaterialIcons-Regular.woff2) format("woff2"), url(../assets/fonts/MaterialIcons-Regular.woff) format("woff");
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(../fonts/MaterialIcons-Regular.woff2) format("woff2"), url(../fonts/MaterialIcons-Regular.woff) format("woff");
 }
 .material-icons {
   font-family: "Material Icons";
@@ -4134,16 +4134,16 @@ html, body {
 }
 
 .login-mdc, body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: url("../img/keycloak-bg.png") no-repeat center center fixed;
   background-size: cover;
   font-family: "Open Sans", sans-serif;
   font-weight: 200;
   margin: 0;
   padding-top: 0.1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .divider-mdc {

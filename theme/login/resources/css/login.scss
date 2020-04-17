@@ -24,19 +24,17 @@ html, body {
 }
 
 .login-mdc, body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   background: url('../img/keycloak-bg.png') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   margin: 0;
   padding-top: 0.1px; // Prevent header h1 margin from pushing body down
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  // background-color: #eceff1;
 }
 
 .login-page-mdc {
@@ -87,7 +85,7 @@ div.kc-logo-text {
   visibility: hidden !important;
 }
 
-//----------
+// ------------------------------------------------------------------------------------------------------------------ //
 
 .form-group {
   // margin-bottom: 16px;
