@@ -125,7 +125,8 @@
 
                         <div class="mdc-card__action-icons">
                             <div class="mdc-card__action-buttons">
-                                <button tabindex="0" name="login" id="kc-login" type="submit" class="mdc-button mdc-button--raised mdc-card__action mdc-card__action--button">
+                                <#-- mdc-button mdc-button--raised mdc-card__action mdc-card__action--button -->
+                                <button tabindex="0" name="login" id="kc-login" type="submit" class="mdc-button mdc-button--raised mdc-card__action">
                                     ${msg("doLogIn")}
                                 </button>
                             </div>

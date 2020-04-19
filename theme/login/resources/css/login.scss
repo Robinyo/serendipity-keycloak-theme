@@ -38,10 +38,6 @@ html, body {
 }
 
 .login-page-mdc {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
 }
 
 .divider-mdc {
@@ -63,6 +59,8 @@ html, body {
   // By default, cards expand horizontally to fill all available space, and vertically to fit their contents.
   width: 500px;
 }
+
+// https://material.io/design/layout/responsive-layout-grid.html#breakpoints
 
 @media (max-width: 480px) {
   .login-page-mdc .card-mdc {
@@ -87,6 +85,9 @@ div.kc-logo-text {
 }
 
 @media (max-width: 480px) {
+  .floating-label-mdc {
+    // width: 50%;
+  }
   .form-group {
     padding-bottom: 8px;
   }
