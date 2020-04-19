@@ -1,6 +1,6 @@
 window.onload = function() {
 
-  console.log("login.js - onload()");
+  console.log('login.js - onload()');
 
   // Initialise all MDC text fields
   document.querySelectorAll('.mdc-text-field').forEach(function(e) {
