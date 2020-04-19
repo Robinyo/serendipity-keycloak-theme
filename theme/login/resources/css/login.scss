@@ -83,8 +83,13 @@ div.kc-logo-text {
 // ------------------------------------------------------------------------------------------------------------------ //
 
 .form-group {
-  // margin-bottom: 16px;
   padding-bottom: 16px;
+}
+
+@media (max-width: 480px) {
+  .form-group {
+    padding-bottom: 8px;
+  }
 }
 
 /*

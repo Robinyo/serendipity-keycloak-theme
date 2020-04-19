@@ -4177,6 +4177,11 @@ div.kc-logo-text {
   padding-bottom: 16px;
 }
 
+@media (max-width: 480px) {
+  .form-group {
+    padding-bottom: 8px;
+  }
+}
 /*
 
 .login-pf body {
