@@ -4158,16 +4158,13 @@ html, body {
 .card-mdc {
   padding: 10px 20px 20px 20px;
   width: 500px;
-  /*
-  background: #fff;
-  margin: 0 auto;
-  padding: 10px 20px 20px 20px;
-  max-width: 500px;
-  border-top: 0;
-  box-shadow: 0 0 0;
-  */
 }
 
+@media (max-width: 480px) {
+  .login-page-mdc .card-mdc {
+    width: 100%;
+  }
+}
 .floating-label-mdc {
   width: 100%;
 }
