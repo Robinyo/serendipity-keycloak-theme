@@ -233,6 +233,11 @@ docker image ls
 
 * Docker docs: [Bind mounts](https://docs.docker.com/storage/bind-mounts/)
 
+### Keycloak Docker Image Resources
+
+* GitHub docs: [Docker image for Keycloak project](https://github.com/keycloak/keycloak-containers)
+* GitHub docs: [Keycloak Server Docker image](https://github.com/keycloak/keycloak-containers/blob/master/server/README.md)
+
 ### Keycloak Theme Resources
 
 * Keycloak docs: [Server Developer Guide - Themes](https://www.keycloak.org/docs/latest/server_development/#_themes)
