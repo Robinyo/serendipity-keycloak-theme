@@ -23,10 +23,16 @@ However, Serendipity's user experience is quite different from Keycloaks so we n
 
 ## ❯ Screen Shots
 
-Login page:
+Register (Sign up) page:
 
 <p align="center">
-  <img src="https://github.com/Robinyo/serendipity-keycloak-theme/blob/master/screen-shots/login-register.png">
+  <img src="https://github.com/Robinyo/serendipity-keycloak-theme/blob/master/screen-shots/oidc-register.png">
+</p>
+
+Login (Sign in) page:
+
+<p align="center">
+  <img src="https://github.com/Robinyo/serendipity-keycloak-theme/blob/master/screen-shots/oidc-login.png">
 </p>
 
 ## ❯ Resources
