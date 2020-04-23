@@ -12,11 +12,8 @@
     "Serendipity"
   ],
   "author": "Rob Ferguson",
-  "homepage": "https://robferguson.org/blog/",
+  "homepage": "https://github.com/Robinyo/serendipity",
   "license": "MIT",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "private": true,
   "engines": {
     "node": ">=10.9.0",
