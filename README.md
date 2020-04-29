@@ -18,6 +18,7 @@ However, Serendipity's user experience is quite different from Keycloaks so we n
 * Administrator Documentation
 * Developer Documentation
   * [Quick Start Guide](./docs/developer/quick-start-guide.md)
+  * [Build Management](./docs/developer/build-management.md)
 * User Documentation
 
 ![divider](./divider.png)

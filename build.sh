@@ -17,3 +17,5 @@ zip -r $DISTRIBUTION_NAME.zip serendipity -x "*.DS_Store" "*Thumbs.db"
 
 echo "Removing tempory files and folders"
 rm -rf serendipity
+
+echo "Packaging complete"
