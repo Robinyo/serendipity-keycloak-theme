@@ -13,10 +13,11 @@ However, Serendipity's user experience is quite different from Keycloaks so we n
 
 ![divider](./divider.png)
 
-## ❯ Quick Links
+## ❯ Documentation
 
 * Administrator Documentation
-* [Developer Documentation](docs/developer.md)
+* Developer Documentation
+  * [Quick Start Guide](./developer/quick-start-guide.md)
 * User Documentation
 
 ![divider](./divider.png)
