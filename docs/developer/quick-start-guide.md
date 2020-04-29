@@ -113,4 +113,4 @@ To verify that the bind mount was created correctly (look for the **Mounts** sec
 
 Navigate to the Welcome page: http://localhost:10001
  
-Then login to the Administration Console using the KEYCLOAK_USER (admin) and KEYCLOAK_PASSWORD (secret) credentials.
+Login to the Administration Console using the KEYCLOAK_USER (admin) and KEYCLOAK_PASSWORD (secret) credentials.
